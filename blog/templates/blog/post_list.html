@@ -3,6 +3,14 @@
     <title> Django girls blog</title>
 <head>
 <body>
+
+{% for post in posts %}
+<div>
+    <p>published: {{ post.published_date }}</p>
+    <h1><a href="">{{ post.title }} </a></h1>
+    <p>{{ post.text}}</p>
+</div>
+{% endfor %}
 <div>
     <h1><a href="/">Django FIrls Blog</a></h1>
     <p>Hi there!</p>
